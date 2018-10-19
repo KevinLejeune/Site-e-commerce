@@ -277,7 +277,7 @@ $(function(){
       }
     })
     $("#moins10").click(function(){
-      if (nmbrProduit10){
+      if (nmbrProduit10 >= 2){
         nmbrProduit10 --;
         $("#produitPanier10").val(nmbrProduit10);
         total = total - 140000;
@@ -291,7 +291,7 @@ $(function(){
       }
     })
     $("#moins11").click(function(){
-      if (nmbrProduit11){
+      if (nmbrProduit11 >= 2){
         nmbrProduit11 --;
         $("#produitPanier11").val(nmbrProduit11);
         total = total - 100000;
