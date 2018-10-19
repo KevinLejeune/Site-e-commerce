@@ -78,3 +78,28 @@ input {
 #cards{
   margin-top: 10%;
 }
+
+#products{
+  background-color: #ffc107;
+  color: white;
+}
+
+#services{
+  background-color: #dc3545;
+  color: white;
+}
+
+#software{
+  background-color: #6c757d;
+  color: white;
+}
+
+#repair{
+  background-color: #17a2b8;
+  color: white;
+}
+
+#sales{
+  background-color: #343a40;
+  color: white;
+}
