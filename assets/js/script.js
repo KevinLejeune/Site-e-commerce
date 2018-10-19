@@ -48,134 +48,167 @@ $(function(){
       $("#displayProduit1").hide();
     } else {
       $("#displayProduit1").show();
-      $("#produitPanier1").val=nmbrProduit1;
+      $("#produitPanier1").val(nmbrProduit1);
     }
     if (produit2 == 0) {
       $("#displayProduit2").hide();
     } else {
       $("#displayProduit2").show();
-      $("#produitPanier2").val=nmbrProduit2;
+      $("#produitPanier2").val(nmbrProduit2);
     }
     if (produit3 == 0) {
       $("#displayProduit3").hide();
     } else {
       $("#displayProduit3").show();
-      $("#produitPanier3").val=nmbrProduit3;
+      $("#produitPanier3").val(nmbrProduit3);
     }
     if (produit4 == 0) {
       $("#displayProduit4").hide();
     } else {
       $("#displayProduit4").show();
-      $("#produitPanier4").val=nmbrProduit4;
+      $("#produitPanier4").val(nmbrProduit4);
     }
     if (produit5 == 0) {
       $("#displayProduit5").hide();
     } else {
       $("#displayProduit5").show();
-      $("#produitPanier5").val=nmbrProduit5;
+      $("#produitPanier5").val(nmbrProduit5);
     }
     if (produit6 == 0) {
       $("#displayProduit6").hide();
     } else {
       $("#displayProduit6").show();
-      $("#produitPanier6").val=nmbrProduit6;
+      $("#produitPanier6").val(nmbrProduit6);
     }
     if (produit7 == 0) {
       $("#displayProduit7").hide();
     } else {
       $("#displayProduit7").show();
-      $("#produitPanier7").val=nmbrProduit7;
+      $("#produitPanier7").val(nmbrProduit7);
     }
     if (produit8 == 0) {
       $("#displayProduit8").hide();
     } else {
       $("#displayProduit8").show();
-      $("#produitPanier8").val=nmbrProduit8;
+      $("#produitPanier8").val(nmbrProduit8);
     }
     if (produit9 == 0) {
       $("#displayProduit9").hide();
     } else {
       $("#displayProduit9").show();
-      $("#produitPanier9").val=nmbrProduit9;
+      $("#produitPanier9").val(nmbrProduit9);
     }
     if (produit10 == 0) {
       $("#displayProduit10").hide();
     } else {
       $("#displayProduit10").show();
-      $("#produitPanier10").val=nmbrProduit10;
+      $("#produitPanier10").val(nmbrProduit10);
     }
     if (produit11 == 0) {
       $("#displayProduit11").hide();
     } else {
       $("#displayProduit11").show();
-      $("#produitPanier11").val=nmbrProduit11;
+      $("#produitPanier11").val(nmbrProduit11);
     }
-    $("#maintenantFautRaquer").val=total;
-  })
-  $("#moins1").click(function(){
-    nmbrProduit1 --;
-  })
-  $("#moins2").click(function(){
-    nmbrProduit2 --;
-  })
-  $("#moins3").click(function(){
-    nmbrProduit3 --;
-  })
-  $("#moins4").click(function(){
-    nmbrProduit4 --;
-  })
-  $("#moins5").click(function(){
-    nmbrProduit5 --;
-  })
-  $("#moins6").click(function(){
-    nmbrProduit6 --;
-  })
-  $("#moins7").click(function(){
-    nmbrProduit7 --;
-  })
-  $("#moins8").click(function(){
-    nmbrProduit8 --;
-  })
-  $("#moins9").click(function(){
-    nmbrProduit9 --;
-  })
-  $("#moins10").click(function(){
-    nmbrProduit10 --;
-  })
-  $("#moins11").click(function(){
-    nmbrProduit11 --;
-  })
-  $("#plus1").click(function(){
-    nmbrProduit1 ++;
-  })
-  $("#plus2").click(function(){
-    nmbrProduit2 ++;
-  })
-  $("#plus3").click(function(){
-    nmbrProduit3 ++;
-  })
-  $("#plus4").click(function(){
-    nmbrProduit4 ++;
-  })
-  $("#plus5").click(function(){
-    nmbrProduit5 ++;
-  })
-  $("#plus6").click(function(){
-    nmbrProduit6 ++;
-  })
-  $("#plus7").click(function(){
-    nmbrProduit7 ++;
-  })
-  $("#plus8").click(function(){
-    nmbrProduit8 ++;
-  })
-  $("#plus9").click(function(){
-    nmbrProduit9 ++;
-  })
-  $("#plus10").click(function(){
-    nmbrProduit10 ++;
-  })
-  $("#plus11").click(function(){
-    nmbrProduit11 ++;
+    $("#maintenantFautRaquer").val(total);
+
+    //début des incrémentations/décrémentations
+    $("#moins1").click(function(){
+      nmbrProduit1 --;
+      total - 10;
+      $("#produitPanier1").val(nmbrProduit1);
+    })
+    $("#moins2").click(function(){
+      nmbrProduit2 --;
+      total - 20;
+      $("#produitPanier2").val(nmbrProduit2);
+    })
+    $("#moins3").click(function(){
+      nmbrProduit3 --;
+      total - 50;
+      $("#produitPanier3").val(nmbrProduit3);
+    })
+    $("#moins4").click(function(){
+      nmbrProduit4 --;
+      total - 5;
+      $("#produitPanier4").val(nmbrProduit4);
+    })
+    $("#moins5").click(function(){
+      nmbrProduit5 --;
+      total - 1000;
+      $("#produitPanier5").val(nmbrProduit5);
+    })
+    $("#moins6").click(function(){
+      nmbrProduit6 --;
+      total - 5000;
+      $("#produitPanier6").val(nmbrProduit6);
+    })
+    $("#moins7").click(function(){
+      nmbrProduit7 --;
+      total - 50000;
+      $("#produitPanier7").val(nmbrProduit7);
+    })
+    $("#moins8").click(function(){
+      nmbrProduit8 --;
+      total - 100000;
+      $("#produitPanier8").val(nmbrProduit8);
+    })
+    $("#moins9").click(function(){
+      nmbrProduit9 --;
+      total - 110000;
+      $("#produitPanier9").val(nmbrProduit9);
+    })
+    $("#moins10").click(function(){
+      nmbrProduit10 --;
+      $("#produitPanier10").val(nmbrProduit10);
+    })
+    $("#moins11").click(function(){
+      nmbrProduit11 --;
+      $("#produitPanier11").val(nmbrProduit11);
+    })
+    $("#plus1").click(function(){
+      nmbrProduit1 ++;
+      $("#produitPanier1").val(nmbrProduit1);
+    })
+    $("#plus2").click(function(){
+      nmbrProduit2 ++;
+      $("#produitPanier2").val(nmbrProduit2);
+    })
+    $("#plus3").click(function(){
+      nmbrProduit3 ++;
+      $("#produitPanier3").val(nmbrProduit3);
+    })
+    $("#plus4").click(function(){
+      nmbrProduit4 ++;
+      $("#produitPanier4").val(nmbrProduit4);
+    })
+    $("#plus5").click(function(){
+      nmbrProduit5 ++;
+      $("#produitPanier5").val(nmbrProduit5);
+    })
+    $("#plus6").click(function(){
+      nmbrProduit6 ++;
+      $("#produitPanier6").val(nmbrProduit6);
+    })
+    $("#plus7").click(function(){
+      nmbrProduit7 ++;
+      $("#produitPanier7").val(nmbrProduit7);
+    })
+    $("#plus8").click(function(){
+      nmbrProduit8 ++;
+      $("#produitPanier8").val(nmbrProduit8);
+    })
+    $("#plus9").click(function(){
+      nmbrProduit9 ++;
+      $("#produitPanier9").val(nmbrProduit9);
+    })
+    $("#plus10").click(function(){
+      nmbrProduit10 ++;
+      $("#produitPanier10").val(nmbrProduit10);
+    })
+    $("#plus11").click(function(){
+      nmbrProduit11 ++;
+      $("#produitPanier11").val(nmbrProduit11);
+    })
   })
 })
