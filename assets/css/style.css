@@ -1,9 +1,29 @@
 #logo{
-  width: 75%;
+  width: 80%;
 }
 
 #listGroup{
   margin: 5%;
+}
+
+.card-body{
+  text-align: center;
+}
+
+.card-title {
+  font-size: 40px;
+}
+
+#text-shadow1{
+  text-shadow: white 2px 3px;
+}
+
+#text-shadow2{
+  text-shadow: black 2px 3px;
+}
+/* modification taille du rectangle select */
+.custom-select{
+  width: 60%;
 }
 
 #logoPanier{
@@ -15,7 +35,8 @@
   height: 70px;
   border-radius: 35px;
   position: fixed;
-  margin-top: 5%;
+  margin-top: 1%;
+  margin-right: 1%;
 }
 .produitPanier{
   width: 10%;
@@ -58,4 +79,10 @@ input {
 }
 #maintenantFautRaquer{
   width: 25%;
+}
+.card{
+  margin: 0.5rem;
+}
+#cards{
+  margin-top: 100px;
 }
