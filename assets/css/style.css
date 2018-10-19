@@ -42,37 +42,35 @@
   width: 10%;
 }
 #moins1{
-  margin-left: 51%;
+  margin-left: 8.5%;
 }
 #moins2{
-  margin-left: 55%;
-}
-#moins3{
-  margin-left: 36%;
+  margin-left: 12%;
 }
 #moins4{
-  margin-left: 61%;
+  margin-left: 18%;
 }
 #moins5{
-  margin-left: 50%;
+  margin-left: 7%;
 }
 #moins6{
-  margin-left: 58%;
+  margin-left: 15.5%;
 }
 #moins7{
-  margin-left: 45.5%;
+  margin-left: 3%;
 }
 #moins8{
-  margin-left: 51.5%;
-}
-#moins9{
-  margin-left: 10%;
+  margin-left: 9%;
 }
 #moins10{
-  margin-left: 10%;
+  margin-left: 1.5%;
 }
 #moins11{
-  margin-left: 10%;
+  margin-left: 2.5%;
+}
+input {
+  text-align: center;
+  width: 20%;
 }
 .card{
   margin: 0.5rem;
