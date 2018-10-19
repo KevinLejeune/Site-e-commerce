@@ -1,21 +1,20 @@
 switch (true) {
   case $("#products").click():
-    console.log("products");
-    break;
+  console.log("products");
+  break;
   case $("#services").click():
-    console.log("services");
-    break;
+  console.log("services");
+  break;
   case $("#software").click():
-    console.log("software");
-    break;
+  console.log("software");
+  break;
   case $("#repair").click():
-    console.log("repair");
-    break;
+  console.log("repair");
+  break;
   case $("#sales").click():
-    console.log("sales");
-    break;
+  console.log("sales");
+  break;
 }
-
 $(function(){
   $(".btnPanier").click(function(){
     var nmbrProduit1 = $("#mouseSmile option:selected").val();
@@ -122,7 +121,6 @@ $(function(){
       $("#sousTotal11").val(produit11)
     }
     $("#maintenantFautRaquer").val(total);
-
     //début des incrémentations/décrémentations
     $("#moins1").click(function(){
       nmbrProduit1 --;
