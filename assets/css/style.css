@@ -6,6 +6,26 @@
   margin: 5%;
 }
 
+.card-body{
+  text-align: center;
+}
+
+.card-title {
+  font-size: 40px;
+}
+
+#text-shadow1{
+  text-shadow: white 2px 3px;
+}
+
+#text-shadow2{
+  text-shadow: black 2px 3px;
+}
+/* modification taille du rectangle select */
+.custom-select{
+  width: 60%;
+}
+
 #logoPanier{
   width: 95%;
   height: 80%;
