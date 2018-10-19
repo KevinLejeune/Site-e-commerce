@@ -6,6 +6,50 @@
   margin: 5%;
 }
 
-#menu{
-
+#logoPanier{
+  width: 95%;
+  height: 80%;
+}
+#btnPanier1{
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  position: fixed;
+  margin-top: 5%;
+}
+.produitPanier{
+  width: 10%;
+}
+#moins1{
+  margin-left: 51%;
+}
+#moins2{
+  margin-left: 55%;
+}
+#moins3{
+  margin-left: 36%;
+}
+#moins4{
+  margin-left: 61%;
+}
+#moins5{
+  margin-left: 50%;
+}
+#moins6{
+  margin-left: 58%;
+}
+#moins7{
+  margin-left: 45.5%;
+}
+#moins8{
+  margin-left: 51.5%;
+}
+#moins9{
+  margin-left: 10%;
+}
+#moins10{
+  margin-left: 10%;
+}
+#moins11{
+  margin-left: 10%;
 }
