@@ -49,66 +49,77 @@ $(function(){
     } else {
       $("#displayProduit1").show();
       $("#produitPanier1").val(nmbrProduit1);
+      $("#sousTotal1").val(produit1)
     }
     if (produit2 == 0) {
       $("#displayProduit2").hide();
     } else {
       $("#displayProduit2").show();
       $("#produitPanier2").val(nmbrProduit2);
+      $("#sousTotal2").val(produit2)
     }
     if (produit3 == 0) {
       $("#displayProduit3").hide();
     } else {
       $("#displayProduit3").show();
       $("#produitPanier3").val(nmbrProduit3);
+      $("#sousTotal3").val(produit3)
     }
     if (produit4 == 0) {
       $("#displayProduit4").hide();
     } else {
       $("#displayProduit4").show();
       $("#produitPanier4").val(nmbrProduit4);
+      $("#sousTotal4").val(produit4)
     }
     if (produit5 == 0) {
       $("#displayProduit5").hide();
     } else {
       $("#displayProduit5").show();
       $("#produitPanier5").val(nmbrProduit5);
+      $("#sousTotal5").val(produit5)
     }
     if (produit6 == 0) {
       $("#displayProduit6").hide();
     } else {
       $("#displayProduit6").show();
       $("#produitPanier6").val(nmbrProduit6);
+      $("#sousTotal6").val(produit6)
     }
     if (produit7 == 0) {
       $("#displayProduit7").hide();
     } else {
       $("#displayProduit7").show();
       $("#produitPanier7").val(nmbrProduit7);
+      $("#sousTotal7").val(produit7)
     }
     if (produit8 == 0) {
       $("#displayProduit8").hide();
     } else {
       $("#displayProduit8").show();
       $("#produitPanier8").val(nmbrProduit8);
+      $("#sousTotal8").val(produit8)
     }
     if (produit9 == 0) {
       $("#displayProduit9").hide();
     } else {
       $("#displayProduit9").show();
       $("#produitPanier9").val(nmbrProduit9);
+      $("#sousTotal9").val(produit9)
     }
     if (produit10 == 0) {
       $("#displayProduit10").hide();
     } else {
       $("#displayProduit10").show();
       $("#produitPanier10").val(nmbrProduit10);
+      $("#sousTotal10").val(produit10)
     }
     if (produit11 == 0) {
       $("#displayProduit11").hide();
     } else {
       $("#displayProduit11").show();
       $("#produitPanier11").val(nmbrProduit11);
+      $("#sousTotal11").val(produit11)
     }
     $("#maintenantFautRaquer").val(total);
 
@@ -118,132 +129,176 @@ $(function(){
       $("#produitPanier1").val(nmbrProduit1);
       total = total - 10;
       $("#maintenantFautRaquer").val(total);
-      console.log(total);
+      produit1 = produit1 - 10;
+      $("#sousTotal1").val(produit1);
     })
     $("#moins2").click(function(){
       nmbrProduit2 --;
       $("#produitPanier2").val(nmbrProduit2);
       total = total - 20;
       $("#maintenantFautRaquer").val(total);
+      produit2 = produit2 - 20;
+      $("#sousTotal2").val(produit2);
     })
     $("#moins3").click(function(){
       nmbrProduit3 --;
       $("#produitPanier3").val(nmbrProduit3);
       total = total - 50;
       $("#maintenantFautRaquer").val(total);
+      produit3 = produit3 - 50;
+      $("#sousTotal3").val(produit3);
     })
     $("#moins4").click(function(){
       nmbrProduit4 --;
       $("#produitPanier4").val(nmbrProduit4);
+      total = total - 5;
       $("#maintenantFautRaquer").val(total);
+      produit4 = produit4 - 5;
+      $("#sousTotal4").val(produit4);
     })
     $("#moins5").click(function(){
       nmbrProduit5 --;
       $("#produitPanier5").val(nmbrProduit5);
       total = total - 1000;
       $("#maintenantFautRaquer").val(total);
+      produit5 = produit5 - 1000;
+      $("#sousTotal5").val(produit5);
     })
     $("#moins6").click(function(){
       nmbrProduit6 --;
       $("#produitPanier6").val(nmbrProduit6);
       total = total - 5000;
       $("#maintenantFautRaquer").val(total);
+      produit6 = produit6 - 5000;
+      $("#sousTotal6").val(produit6);
     })
     $("#moins7").click(function(){
       nmbrProduit7 --;
       $("#produitPanier7").val(nmbrProduit7);
       total = total - 50000;
       $("#maintenantFautRaquer").val(total);
+      produit7 = produit7 - 50000;
+      $("#sousTotal7").val(produit7);
     })
     $("#moins8").click(function(){
       nmbrProduit8 --;
       $("#produitPanier8").val(nmbrProduit8);
       total = total - 100000;
       $("#maintenantFautRaquer").val(total);
+      produit8 = produit8 - 100000;
+      $("#sousTotal8").val(produit8);
     })
     $("#moins9").click(function(){
       nmbrProduit9 --;
       $("#produitPanier9").val(nmbrProduit9);
       total = total - 110000;
       $("#maintenantFautRaquer").val(total);
+      produit9 = produit9 - 110000;
+      $("#sousTotal9").val(produit9);
     })
     $("#moins10").click(function(){
       nmbrProduit10 --;
       $("#produitPanier10").val(nmbrProduit10);
       total = total - 140000;
       $("#maintenantFautRaquer").val(total);
+      produit10 = produit10 - 140000;
+      $("#sousTotal10").val(produit10);
     })
     $("#moins11").click(function(){
       nmbrProduit11 --;
       $("#produitPanier11").val(nmbrProduit11);
       total = total - 100000;
       $("#maintenantFautRaquer").val(total);
+      produit11 = produit11 - 100000;
+      $("#sousTotal11").val(produit11);
     })
     $("#plus1").click(function(){
       nmbrProduit1 ++;
       $("#produitPanier1").val(nmbrProduit1);
       total = total + 10;
       $("#maintenantFautRaquer").val(total);
+      produit1 = produit1 + 10;
+      $("#sousTotal1").val(produit1);
     })
     $("#plus2").click(function(){
       nmbrProduit2 ++;
       $("#produitPanier2").val(nmbrProduit2);
       total = total + 20;
       $("#maintenantFautRaquer").val(total);
+      produit2 = produit2 + 20;
+      $("#sousTotal2").val(produit2);
     })
     $("#plus3").click(function(){
       nmbrProduit3 ++;
       $("#produitPanier3").val(nmbrProduit3);
       total = total + 50;
       $("#maintenantFautRaquer").val(total);
+      produit3 = produit3 + 50;
+      $("#sousTotal3").val(produit3);
     })
     $("#plus4").click(function(){
       nmbrProduit4 ++;
       $("#produitPanier4").val(nmbrProduit4);
       total = total + 5;
       $("#maintenantFautRaquer").val(total);
+      produit4 = produit4 + 5;
+      $("#sousTotal4").val(produit4);
     })
     $("#plus5").click(function(){
       nmbrProduit5 ++;
       $("#produitPanier5").val(nmbrProduit5);
       total = total + 1000;
       $("#maintenantFautRaquer").val(total);
+      produit5 = produit5 + 1000;
+      $("#sousTotal5").val(produit5);
     })
     $("#plus6").click(function(){
       nmbrProduit6 ++;
       $("#produitPanier6").val(nmbrProduit6);
       total = total + 5000;
       $("#maintenantFautRaquer").val(total);
+      produit6 = produit6 + 5000;
+      $("#sousTotal6").val(produit6);
     })
     $("#plus7").click(function(){
       nmbrProduit7 ++;
       $("#produitPanier7").val(nmbrProduit7);
       total = total + 50000;
       $("#maintenantFautRaquer").val(total);
+      produit7 = produit7 + 50000;
+      $("#sousTotal7").val(produit7);
     })
     $("#plus8").click(function(){
       nmbrProduit8 ++;
       $("#produitPanier8").val(nmbrProduit8);
       total = total + 100000;
       $("#maintenantFautRaquer").val(total);
+      produit8 = produit8 + 100000;
+      $("#sousTotal8").val(produit8);
     })
     $("#plus9").click(function(){
       nmbrProduit9 ++;
       $("#produitPanier9").val(nmbrProduit9);
       total = total + 110000;
       $("#maintenantFautRaquer").val(total);
+      produit9 = produit9 + 110000;
+      $("#sousTotal9").val(produit9);
     })
     $("#plus10").click(function(){
       nmbrProduit10 ++;
       $("#produitPanier10").val(nmbrProduit10);
       total = total + 140000;
       $("#maintenantFautRaquer").val(total);
+      produit10 = produit10 + 140000;
+      $("#sousTotal10").val(produit10);
     })
     $("#plus11").click(function(){
       nmbrProduit11 ++;
       $("#produitPanier11").val(nmbrProduit11);
       total = total + 100000;
       $("#maintenantFautRaquer").val(total);
+      produit11 = produit11 + 100000;
+      $("#sousTotal11").val(produit11);
     })
   })
   $("#pigeon").click(function(){
