@@ -1,5 +1,5 @@
 #logo{
-  width: 75%;
+  width: 80%;
 }
 
 #listGroup{
@@ -15,7 +15,8 @@
   height: 70px;
   border-radius: 35px;
   position: fixed;
-  margin-top: 5%;
+  margin-top: 1%;
+  margin-right: 1%;
 }
 .produitPanier{
   width: 10%;
@@ -52,4 +53,10 @@
 }
 #moins11{
   margin-left: 10%;
+}
+.card{
+  margin: 0.5rem;
+}
+#cards{
+  margin-top: 100px;
 }
