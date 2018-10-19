@@ -71,13 +71,10 @@
 input {
   text-align: center;
   width: 20%;
-<<<<<<< HEAD
-=======
 }
 .card{
   margin: 0.5rem;
 }
 #cards{
   margin-top: 100px;
->>>>>>> dbef95f41c6e85911e8f4ad444a56c0113062622
 }
