@@ -1,21 +1,49 @@
-switch (true) {
-  case $("#products").click():
-  console.log("products");
-  break;
-  case $("#services").click():
-  console.log("services");
-  break;
-  case $("#software").click():
-  console.log("software");
-  break;
-  case $("#repair").click():
-  console.log("repair");
-  break;
-  case $("#sales").click():
-  console.log("sales");
-  break;
-}
 $(function(){
+  $(".bg-danger").hide();
+  $(".bg-secondary").hide();
+  $(".bg-info").hide();
+  $(".bg-dark").hide();
+
+  $("#products").click(function() {
+    $(".bg-warning").show();
+    $(".bg-danger").hide();
+    $(".bg-secondary").hide();
+    $(".bg-info").hide();
+    $(".bg-dark").hide();
+  });
+
+  $("#services").click(function() {
+    $(".bg-warning").hide();
+    $(".bg-danger").show();
+    $(".bg-secondary").hide();
+    $(".bg-info").hide();
+    $(".bg-dark").hide();
+  });
+
+  $("#software").click(function() {
+    $(".bg-warning").hide();
+    $(".bg-danger").hide();
+    $(".bg-secondary").show();
+    $(".bg-info").hide();
+    $(".bg-dark").hide();
+  });
+
+  $("#repair").click(function() {
+    $(".bg-warning").hide();
+    $(".bg-danger").hide();
+    $(".bg-secondary").hide();
+    $(".bg-info").show();
+    $(".bg-dark").hide();
+  });
+
+  $("#sales").click(function() {
+    $(".bg-warning").hide();
+    $(".bg-danger").hide();
+    $(".bg-secondary").hide();
+    $(".bg-info").hide();
+    $(".bg-dark").show();
+  });
+
   $(".btnPanier").click(function(){
     var nmbrProduit1 = $("#mouseSmile option:selected").val();
     var nmbrProduit2 = $("#mouseCry option:selected").val();
