@@ -13,6 +13,41 @@
 
         </div>
         <div class="col-sm-9">
+          <div class="offset-11 col-1">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btnPanier" id="btnPanier1" data-toggle="modal" data-target="#exampleModalCenter"><img src="assets/img/panier.png" id="logoPanier"/></button>
+        </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Votre panier</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p id="displayProduit1">Mouse smile <button type="button" class="btn btn-primary" id="moins1">-</button><input type="text" value="" class="produitPanier" id="produitPanier1"><button type="button" class="btn btn-primary" id="plus1">+</button></p>
+                  <p id="displayProduit2">Mouse cry <button type="button" class="btn btn-primary" id="moins2">-</button><input type="text" value="" class="produitPanier" id="produitPanier2"><button type="button" class="btn btn-primary" id="plus2">+</button></p>
+                  <p id="displayProduit3">Mouse super coin-coin <button type="button" class="btn btn-primary" id="moins3">-</button><input type="text" value="" class="produitPanier" id="produitPanier3"><button type="button" class="btn btn-primary" id="plus3">+</button></p>
+                  <p id="displayProduit4">Aucun <button type="button" class="btn btn-primary" id="moins4">-</button><input type="text" value="" class="produitPanier" id="produitPanier4"><button type="button" class="btn btn-primary" id="plus4">+</button></p>
+                  <p id="displayProduit5">Semi-complet <button type="button" class="btn btn-primary" id="moins5">-</button><input type="text" value="" class="produitPanier" id="produitPanier5"><button type="button" class="btn btn-primary" id="plus5">+</button></p>
+                  <p id="displayProduit6">Complet <button type="button" class="btn btn-primary" id="moins6">-</button><input type="text" value="" class="produitPanier" id="produitPanier6"><button type="button" class="btn btn-primary" id="plus6">+</button></p>
+                  <p id="displayProduit7">MicroWord Suite <button type="button" class="btn btn-primary" id="moins7">-</button><input type="text" value="" class="produitPanier" id="produitPanier7"><button type="button" class="btn btn-primary" id="plus7">+</button></p>
+                  <p id="displayProduit8">Adobe Idead <button type="button" class="btn btn-primary" id="moins8">-</button><input type="text" value="" class="produitPanier" id="produitPanier8"><button type="button" class="btn btn-primary" id="plus8">+</button></p>
+                  <p id="displayProduit9">Réparation interne <button type="button" class="btn btn-primary" id="moins9">-</button><input type="text" value="" class="produitPanier" id="produitPanier9"><button type="button" class="btn btn-primary" id="plus9">+</button></p>
+                  <p id="displayProduit10">Démontage d'ordi <button type="button" class="btn btn-primary" id="moins10">-</button><input type="text" value="" class="produitPanier" id="produitPanier10"><button type="button" class="btn btn-primary" id="plus10">+</button></p>
+                  <p id="displayProduit11">Action Coin-Coin <button type="button" class="btn btn-primary" id="moins11">-</button><input type="text" value="" class="produitPanier" id="produitPanier11"><button type="button" class="btn btn-primary" id="plus11">+</button></p>
+                  <hr></hr>
+                  <p class="text-center"> Total <input type="text" value="" id="maintenantFautRaquer"readonly></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Retour aux emplettes</button>
+                  <button type="button" class="btn btn-primary">Passer commande</button>
+                </div>
+              </div>
           <!-- Aurélie Produits start  -->
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="assets/img/100px180/" alt="image souris qui rit">
