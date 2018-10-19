@@ -66,13 +66,19 @@
   margin-left: 51.5%;
 }
 #moins9{
-  margin-left: 10%;
+  margin-left: 42.5%;
 }
 #moins10{
-  margin-left: 10%;
+  margin-left: 44%;
 }
 #moins11{
-  margin-left: 10%;
+  margin-left: 45%;
+}
+input {
+  text-align: center;
+}
+#maintenantFautRaquer{
+  width: 25%;
 }
 .card{
   margin: 0.5rem;

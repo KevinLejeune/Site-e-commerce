@@ -115,100 +115,138 @@ $(function(){
     //début des incrémentations/décrémentations
     $("#moins1").click(function(){
       nmbrProduit1 --;
-      total - 10;
       $("#produitPanier1").val(nmbrProduit1);
+      total = total - 10;
+      $("#maintenantFautRaquer").val(total);
+      console.log(total);
     })
     $("#moins2").click(function(){
       nmbrProduit2 --;
-      total - 20;
       $("#produitPanier2").val(nmbrProduit2);
+      total = total - 20;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#moins3").click(function(){
       nmbrProduit3 --;
-      total - 50;
       $("#produitPanier3").val(nmbrProduit3);
+      total = total - 50;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#moins4").click(function(){
       nmbrProduit4 --;
-      total - 5;
       $("#produitPanier4").val(nmbrProduit4);
+      $("#maintenantFautRaquer").val(total);
     })
     $("#moins5").click(function(){
       nmbrProduit5 --;
-      total - 1000;
       $("#produitPanier5").val(nmbrProduit5);
+      total = total - 1000;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#moins6").click(function(){
       nmbrProduit6 --;
-      total - 5000;
       $("#produitPanier6").val(nmbrProduit6);
+      total = total - 5000;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#moins7").click(function(){
       nmbrProduit7 --;
-      total - 50000;
       $("#produitPanier7").val(nmbrProduit7);
+      total = total - 50000;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#moins8").click(function(){
       nmbrProduit8 --;
-      total - 100000;
       $("#produitPanier8").val(nmbrProduit8);
+      total = total - 100000;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#moins9").click(function(){
       nmbrProduit9 --;
-      total - 110000;
       $("#produitPanier9").val(nmbrProduit9);
+      total = total - 110000;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#moins10").click(function(){
       nmbrProduit10 --;
       $("#produitPanier10").val(nmbrProduit10);
+      total = total - 140000;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#moins11").click(function(){
       nmbrProduit11 --;
       $("#produitPanier11").val(nmbrProduit11);
+      total = total - 100000;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#plus1").click(function(){
       nmbrProduit1 ++;
       $("#produitPanier1").val(nmbrProduit1);
+      total = total + 10;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#plus2").click(function(){
       nmbrProduit2 ++;
       $("#produitPanier2").val(nmbrProduit2);
+      total = total + 20;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#plus3").click(function(){
       nmbrProduit3 ++;
       $("#produitPanier3").val(nmbrProduit3);
+      total = total + 50;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#plus4").click(function(){
       nmbrProduit4 ++;
       $("#produitPanier4").val(nmbrProduit4);
+      total = total + 5;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#plus5").click(function(){
       nmbrProduit5 ++;
       $("#produitPanier5").val(nmbrProduit5);
+      total = total + 1000;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#plus6").click(function(){
       nmbrProduit6 ++;
       $("#produitPanier6").val(nmbrProduit6);
+      total = total + 5000;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#plus7").click(function(){
       nmbrProduit7 ++;
       $("#produitPanier7").val(nmbrProduit7);
+      total = total + 50000;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#plus8").click(function(){
       nmbrProduit8 ++;
       $("#produitPanier8").val(nmbrProduit8);
+      total = total + 100000;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#plus9").click(function(){
       nmbrProduit9 ++;
       $("#produitPanier9").val(nmbrProduit9);
+      total = total + 110000;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#plus10").click(function(){
       nmbrProduit10 ++;
       $("#produitPanier10").val(nmbrProduit10);
+      total = total + 140000;
+      $("#maintenantFautRaquer").val(total);
     })
     $("#plus11").click(function(){
       nmbrProduit11 ++;
       $("#produitPanier11").val(nmbrProduit11);
+      total = total + 100000;
+      $("#maintenantFautRaquer").val(total);
     })
+  })
+  $("#pigeon").click(function(){
+    alert("Le collectif LeBonCoinCoin vous remercie de votre investissement mais ce n'est qu'un site test. En revanche, si vous disposez d'une volonté sans faille (et d'un énorme compte en banque), vous pouvez envoyer vos coordonnées bancaires (numéro de carte, date d'expiration et cryptogramme visuel) à vallois-nicolas@outlook.fr (et oui je prends la tune parce que c'est moi qui ai fait la modal). Bisous à vous, au revoir !")
   })
 })
