@@ -173,3 +173,28 @@ input{
   background-color: #343a40;
   color: white;
 }
+#btnPanier2{
+  display: none;
+}
+@media all and (max-width: 1345px) {
+  #btnPanier1{
+    display: none;
+  }
+  #btnPanier2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+  }
+}
+#dismiss2{
+  display: none;
+}
+@media all and (max-width: 390px){
+  #dismiss{
+    display: none;
+  }
+  #dismiss2{
+    display: block;
+  }
+}
