@@ -165,7 +165,7 @@ $(function(){
         $("#maintenantFautRaquer").val(total);
         $("#displayProduit1").hide(); //si la valeur du nombre de produit atteint 0 alors l'article est caché dans le panier
         $("#mouseSmile").val(0); //remise à zero dans le select de la carte correspondante
-    }
+      }
     })
     $("#moins2").click(function(){
       if (nmbrProduit2 >= 2){
@@ -193,10 +193,10 @@ $(function(){
         $("#sousTotal3").val(produit3);
         $("#mouseSDuck").val(nmbrProduit3)
       } else {
-         total = total - 50;
-         $("#maintenantFautRaquer").val(total);
-         $("#displayProduit3").hide();
-         $("#mouseSDuck").val(0);
+        total = total - 50;
+        $("#maintenantFautRaquer").val(total);
+        $("#displayProduit3").hide();
+        $("#mouseSDuck").val(0);
       }
     })
     $("#moins4").click(function(){
