@@ -141,13 +141,6 @@ input{
   text-align: center;
   width: 20%;
 }
-.card{
-  margin: 0.5rem;
-}
-
-#cards{
-  margin-top: 10%;
-}
 
 #products{
   background-color: #ffc107;
