@@ -45,7 +45,7 @@ $(function(){
   });
 
   $(".btnPanier").click(function(){
-    var nmbrProduit1 = $("#mouseSmile option:selected").val();
+    var nmbrProduit1 = $("#mouseSmile option:selected").val(); //récupération de la valeur correspondante à la quantité choisie par l'utilisateur dans le select
     var nmbrProduit2 = $("#mouseCry option:selected").val();
     var nmbrProduit3 = $("#mouseSDuck option:selected").val();
     var nmbrProduit4 = $("#zeroFlouz option:selected").val();
@@ -57,7 +57,7 @@ $(function(){
     var nmbrProduit10 = $("#dO option:selected").val();
     var nmbrProduit11 = $("#ACC option:selected").val();
 
-    var produit1 = nmbrProduit1 * 10;
+    var produit1 = nmbrProduit1 * 10; //multiplication de la variable correspondante à la quantité de produits par le prix du produit dans une nouvelle variable qui désignera le sous-total pour ce produit
     var produit2 = nmbrProduit2 * 20;
     var produit3 = nmbrProduit3 * 50;
     var produit4 = nmbrProduit4 * 5;
@@ -69,14 +69,14 @@ $(function(){
     var produit10 = nmbrProduit10 * 140000;
     var produit11 = nmbrProduit11 * 100000;
 
-    var total = produit1 + produit2 + produit3 + produit4 + produit5 + produit6 + produit7 + produit8 + produit9 + produit10 + produit11;
+    var total = produit1 + produit2 + produit3 + produit4 + produit5 + produit6 + produit7 + produit8 + produit9 + produit10 + produit11; //création de la variable total qui additionne tous les sous-totaux
 
     if (produit1 == 0) {
-      $("#displayProduit1").hide();
+      $("#displayProduit1").hide(); //si le sous-toal est égal à zero c'est qu'il n'y a aucun produit choisi, donc il ne faut pas l'afficher dans le panier
     } else {
-      $("#displayProduit1").show();
-      $("#produitPanier1").val(nmbrProduit1);
-      $("#sousTotal1").val(produit1)
+      $("#displayProduit1").show(); //affichage dans le panier si le sous-total du produit associé est supérieur à zero
+      $("#produitPanier1").val(nmbrProduit1); //modification de la valeur de l'input pour qu'il affiche le nombre de produits choisis dans le select par l'utilsateur
+      $("#sousTotal1").val(produit1) //modification de la valeur de l'input pour qu'il affiche le sous-total correspondant au produit choisi par l'utilisateur
     }
     if (produit2 == 0) {
       $("#displayProduit2").hide();
@@ -148,23 +148,23 @@ $(function(){
       $("#produitPanier11").val(nmbrProduit11);
       $("#sousTotal11").val(produit11)
     }
-    $("#maintenantFautRaquer").val(total);
+    $("#maintenantFautRaquer").val(total); //modification de la valeur dans l'input correspondant au total pour afficher le total à payer par l'utilisateur
 
-    //début des incrémentations/décrémentations
+    //début des incrémentations/décrémentations accrochez-vous bien c'est long
     $("#moins1").click(function(){
       if (nmbrProduit1 >= 2){
-        nmbrProduit1 --;
-        $("#produitPanier1").val(nmbrProduit1);
-        total = total - 10;
-        $("#maintenantFautRaquer").val(total);
-        produit1 = produit1 - 10;
-        $("#sousTotal1").val(produit1);
-        $("#mouseSmile").val(nmbrProduit1);
+        nmbrProduit1 --; //décrémentation du nombre de produits
+        $("#produitPanier1").val(nmbrProduit1); //modification de la variable dans l'input pour affichage
+        total = total - 10; //retrait de la somme correspondante au produit lors de la décrémentation au total
+        $("#maintenantFautRaquer").val(total); //modification de la variable total alors modifiée pour affichage
+        produit1 = produit1 - 10; //retrait de la somme dans le sous-total
+        $("#sousTotal1").val(produit1); //modification de la variable dans l'input pour affichage
+        $("#mouseSmile").val(nmbrProduit1); //modification de la variable dans le select de la carte correspondante
       } else {
         total = total - 10;
         $("#maintenantFautRaquer").val(total);
-        $("#displayProduit1").hide();
-        $("#mouseSmile").val(0);
+        $("#displayProduit1").hide(); //si la valeur du nombre de produit atteint 0 alors l'article est caché dans le panier
+        $("#mouseSmile").val(0); //remise à zero dans le select de la carte correspondante
     }
     })
     $("#moins2").click(function(){
@@ -336,16 +336,16 @@ $(function(){
         produit1 = produit1 + 10;
         $("#sousTotal1").val(produit1);
         $("#mouseSmile").val(nmbrProduit1);
-      }else{
-      nmbrProduit1 ++;
-      $("#produitPanier1").val(nmbrProduit1);
-      total = total + 10;
-      $("#maintenantFautRaquer").val(total);
-      produit1 = produit1 + 10;
-      $("#sousTotal1").val(produit1);
-      $("#mouseSmile").append(new Option(nmbrProduit1, nmbrProduit1));
-      $("#mouseSmile").val(nmbrProduit1);
-    }
+      } else {
+        nmbrProduit1 ++;
+        $("#produitPanier1").val(nmbrProduit1);
+        total = total + 10;
+        $("#maintenantFautRaquer").val(total);
+        produit1 = produit1 + 10;
+        $("#sousTotal1").val(produit1);
+        $("#mouseSmile").append(new Option(nmbrProduit1, nmbrProduit1)); //création d'une nouvelle option dans le select au moment de l'incrémentation si le client veut plus que 3 produits.
+        $("#mouseSmile").val(nmbrProduit1);
+      }
     })
     $("#plus2").click(function(){
       if (nmbrProduit2 <= 2) {
