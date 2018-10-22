@@ -149,19 +149,20 @@ $(function(){
       $("#sousTotal11").val(produit11)
     }
     $("#maintenantFautRaquer").val(total);
+
     //début des incrémentations/décrémentations
     $("#moins1").click(function(){
       if (nmbrProduit1 >= 2){
-      nmbrProduit1 --;
-      $("#produitPanier1").val(nmbrProduit1);
-      total = total - 10;
-      $("#maintenantFautRaquer").val(total);
-      produit1 = produit1 - 10;
-      $("#sousTotal1").val(produit1);
-    } else {
-      total = total - 10;
-      $("#maintenantFautRaquer").val(total);
-      $("#displayProduit1").hide();
+        nmbrProduit1 --;
+        $("#produitPanier1").val(nmbrProduit1);
+        total = total - 10;
+        $("#maintenantFautRaquer").val(total);
+        produit1 = produit1 - 10;
+        $("#sousTotal1").val(produit1);
+      } else {
+        total = total - 10;
+        $("#maintenantFautRaquer").val(total);
+        $("#displayProduit1").hide();
     }
     })
     $("#moins2").click(function(){
